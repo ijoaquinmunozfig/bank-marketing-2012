@@ -14,7 +14,7 @@ Which clients are worth prioritizing in a telemarketing campaign? The model give
 
 - Source: [Bank Marketing](https://archive.ics.uci.edu/dataset/222/bank+marketing), UCI Machine Learning Repository (CC BY 4.0). Historical campaign data from a Portuguese bank.
 - About 45,000 clients, with demographic, financial and campaign variables. The target is whether the client subscribed (`y`).
-- Only about [11.7%] of clients subscribed, so the classes are imbalanced.
+- Only about 11.7% of clients subscribed, so the classes are imbalanced.
 
 ## Method
 
@@ -36,7 +36,7 @@ Which clients are worth prioritizing in a telemarketing campaign? The model give
 | Precision | 0.44 |
 | F1 | 0.49 |
 
-Although the model's Accuracy (86.6%) is lower than some baseline configurations, it achieves a substantially higher Recall (54.1%) and F1-score (48.6%), making it more effective for identifying potential subscribers in an imbalanced classification setting. The ROC-AUC score of 0.80 also indicates good discrimination between customers who will and will not subscribe.
+Accuracy (86.6%) is lower than the 88.3% that a model that always predicts "no" would reach, because only about 11.7% of clients subscribe. The class-balanced random forest trades some accuracy for a much more useful recall (54.1%) and F1 score (48.6%): it finds just over half of the clients who actually subscribe. The ROC-AUC of 0.80 means it ranks a random subscriber above a random non-subscriber about 80% of the time. Precision is 44%, so more than half of the clients it flags will still not subscribe.
 
 ## The app
 
@@ -74,4 +74,4 @@ Moro, S., Rita, P., & Cortez, P. (2014). Bank Marketing [Dataset]. UCI Machine L
 
 ## Author
 
-Joaquín Ignacio Muñoz Figueroa | [LinkedIn] (www.linkedin.com/in/joaquín-muñoz-figueroa-586a5a229)| [GitHub] (https://github.com/ijoaquinmunozfig)
+Joaquín Ignacio Muñoz Figueroa | [LinkedIn](https://www.linkedin.com/in/joaqu%C3%ADn-mu%C3%B1oz-figueroa-586a5a229)| [GitHub](https://github.com/ijoaquinmunozfig)
