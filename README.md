@@ -53,13 +53,13 @@ Accuracy (86.6%) is lower than the 88.3% that a model that always predicts "no" 
 ## Repository structure
 
 ```
-.streamlit/     Streamlit deployment configuration
-app/            Streamlit app
-images/         App images
-models/         Trained pipeline, metadata and test scores
-notebook/       Analysis and training notebook
-README.md       Project overview and documentation
-requirements.txt
+.streamlit/      Streamlit deployment configuration
+app/             Streamlit app
+images/          App images
+models/          Trained pipeline, metadata and test scores
+notebook/        Analysis and training notebook
+README.md        Project overview and documentation
+requirements.txt Project dependencies
 ```
 
 ## Run locally
