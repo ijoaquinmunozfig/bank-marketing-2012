@@ -1,0 +1,124 @@
+{
+  "model_name": "Random Forest (balanced class weights, Randomized Search CV)",
+  "trained_on": "2026-10-18",
+  "dataset": {
+    "source": "UCI Machine Learning Repository, Bank Marketing (id=222)",
+    "license": "CC BY 4.0",
+    "train_rows": 33908,
+    "test_rows": 11303,
+    "train_positive_rate": 0.1169930399905627
+  },
+  "excluded_features": [
+    "duration"
+  ],
+  "features": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "day_of_week",
+    "month",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome",
+    "contact_bool"
+  ],
+  "categorical_options": {
+    "job": [
+      "admin.",
+      "blue-collar",
+      "entrepreneur",
+      "housemaid",
+      "management",
+      "missing",
+      "retired",
+      "self-employed",
+      "services",
+      "student",
+      "technician",
+      "unemployed"
+    ],
+    "marital": [
+      "divorced",
+      "married",
+      "single"
+    ],
+    "education": [
+      "missing",
+      "primary",
+      "secondary",
+      "tertiary"
+    ],
+    "poutcome": [
+      "failure",
+      "missing",
+      "other",
+      "success"
+    ],
+    "month": [
+      "apr",
+      "aug",
+      "dec",
+      "feb",
+      "jan",
+      "jul",
+      "jun",
+      "mar",
+      "may",
+      "nov",
+      "oct",
+      "sep"
+    ]
+  },
+  "numeric_ranges": {
+    "age": {
+      "min": 18.0,
+      "max": 95.0,
+      "median": 39.0
+    },
+    "balance": {
+      "min": -8019.0,
+      "max": 102127.0,
+      "median": 451.0
+    },
+    "pdays": {
+      "min": -1.0,
+      "max": 871.0,
+      "median": -1.0
+    },
+    "campaign": {
+      "min": 1.0,
+      "max": 63.0,
+      "median": 2.0
+    },
+    "day_of_week": {
+      "min": 1.0,
+      "max": 31.0,
+      "median": 16.0
+    },
+    "previous": {
+      "min": 0.0,
+      "max": 275.0,
+      "median": 0.0
+    }
+  },
+  "default_threshold": 0.5,
+  "test_metrics_at_default_threshold": {
+    "accuracy": 0.8659647881093515,
+    "roc_auc": 0.8000082153065106,
+    "f1": 0.4855687606112054,
+    "recall": 0.5408472012102874,
+    "precision": 0.4405422057917437
+  },
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  }
+}
